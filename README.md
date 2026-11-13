@@ -6,7 +6,7 @@
 Himani Agrawal and Megha Rathi<br>
 Department of CSE & IT, Jaypee Institute of Information Technology, Noida, India
 
-https://doi.org/10.5281/zenodo.XXXXXXXX
+(https://doi.org/10.5281/zenodo.24193258)
 
 Code, data, figures and tables accompanying the manuscript submitted to *Intelligent Computing*.
 
