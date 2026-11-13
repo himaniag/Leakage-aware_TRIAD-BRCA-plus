@@ -1,0 +1,9 @@
+﻿Category,Variables,Rationale
+Direct / alternative subtype labels,"pam50 + claudin-low subtype, 3-gene classifier subtype",Redundant or near-redundant target labels
+Molecular clustering labels,integrative cluster,Derived from the same expression profiles
+Receptor-status variables,"er status measured by ihc, er status, pr status, her2 status measured by snp6, her2 status",Near-deterministic of subtype by clinical definition
+Histological-subtype encodings,"tumor other histologic subtype, cancer type detailed, oncotree code",Three redundant encodings of histology (v1 removed only one)
+Treatment-assignment variables,"chemotherapy, hormone therapy, radio therapy, type of breast surgery",Prescribed on the basis of ER/HER2 status (proxy of the label); new in TRIAD-BRCA+
+Survival / outcome variables,"overall survival months, overall survival, death from cancer",Downstream of diagnosis; reserved for clinical-validity analysis
+Identifiers / constants,"patient id, cancer type",No predictive content; pipeline-leakage risk
+Retained pre-treatment clinical view,"age at diagnosis, neoplasm histologic grade, tumor size, tumor stage, lymph nodes examined positive, nottingham prognostic index, mutation count, cellularity, inferred menopausal state, primary tumor laterality, cohort","Available at diagnosis, label-independent"

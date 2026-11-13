@@ -1,0 +1,20 @@
+Figure captions for the manuscript "Leakage-Aware Ensemble Learning for Multi-Omics Breast Cancer Subtype Classification"
+
+Fig1_architecture.png
+Fig. 1. Architecture of TRIAD-BRCA+. Stages 1–4 are fitted strictly inside each outer training fold; Stage 5 transfers the framework to TCGA-BRCA. DSS, disease-specific survival; HPs, hyper-parameters; IHC, immunohistochemistry; RFS, relapse-free survival.
+
+Fig2_critical_difference_diagram.png
+Fig. 2. Critical-difference diagram of mean balanced-accuracy ranks over the 10 paired folds. Lower rank is better. Thick bars join models that are not significantly different (Nemenyi test).
+
+Fig3_confusion_matrices.png
+Fig. 3. Confusion matrices of pooled out-of-fold predictions (repeat 1, n = 1,559). (a) TRIAD-BRCA v1 equal-weight ensemble (V1). (b) TRIAD-BRCA+ at the arg-max operating point. (c) TRIAD-BRCA+ with the balanced-risk rule. Cell text gives the count and the row-normalised recall. Basal, Basal-like; HER2-E, HER2-enriched; LumA, Luminal A; LumB, Luminal B.
+
+Fig4_permutation_importance.png
+Fig. 4. Permutation importance of TRIAD-BRCA+ on outer test folds (repeat 1). (a) View-level reliance: increase in log-loss when each input view is permuted (log scale). (b) The 20 most important individual features: increase in log-loss when each feature is permuted.
+
+Fig5_kaplan_meier_survival.png
+Fig. 5. Kaplan–Meier curves by reference PAM50 label and by TRIAD-BRCA+ out-of-fold prediction. (a) Disease-specific survival (DSS) by reference PAM50 label. (b) DSS by TRIAD-BRCA+ predicted subtype. (c) Relapse-free survival (RFS) by reference PAM50 label. (d) RFS by TRIAD-BRCA+ predicted subtype. Each panel reports the multi-group log-rank χ2 and p value.
+
+Fig6_tcga_external_transfer.png
+Fig. 6. External transfer to TCGA-BRCA (n = 506). (a) Balanced accuracy with bootstrap 95% confidence intervals under the v1 protocol (E1) and the proposed harmonisation protocols (E2, E3); the dashed line marks chance level. (b and c) Confusion matrices against the IHC surrogate for the v1 equal-weight ensemble under the v1 protocol (b) and for TRIAD-BRCA+ under the proposed protocol E3 (c); cell text gives the count and the row-normalised recall.
+

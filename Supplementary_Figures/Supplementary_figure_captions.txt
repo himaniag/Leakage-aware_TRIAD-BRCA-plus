@@ -1,0 +1,35 @@
+Supplementary figure captions for the manuscript "Leakage-Aware Ensemble Learning for Multi-Omics Breast Cancer Subtype Classification"
+
+FigS01_label_distribution_and_module_scores.jpg
+Fig. S1. Analytical cohort and knowledge-guided meta-gene modules. (a) PAM50 labels in the METABRIC export (n = 1,904); claudin-low, Normal-like and unclassified tumours (grey) were excluded from the analytical cohort. (b) Distribution of the meta-gene module scores (standard-deviation units) in the four analysed subtypes.
+
+FigS02_leakage_audit.jpg
+Fig. S2. Leakage audit. (a) Change in balanced accuracy, relative to the honest pipeline, when each excluded channel is re-inserted, for the ridge logistic regression (Ridge-LR), RBF-SVM and gradient-boosted decision tree (GBDT) probes over the 10 paired folds. (b) Optimism from metric substitution (accuracy minus balanced accuracy, percentage points) for the three probes, and the inflation produced by leaky preprocessing for the v1 SVM.
+
+FigS03_model_comparison.jpg
+Fig. S3. Comparison of all 16 configurations over the 10 paired folds. (a) Balanced accuracy. (b) Matthews correlation coefficient (MCC). Small dots show individual folds and large markers with error bars show the fold means; the dashed line marks the TRIAD-BRCA v1 equal-weight ensemble (V1). Colours identify single-model baselines, TRIAD-BRCA v1 experts and frameworks, TRIAD-BRCA+ experts and the proposed configurations.
+
+FigS04_ablation_waterfall.jpg
+Fig. S4. Incremental ablation from TRIAD-BRCA v1 (A0) to TRIAD-BRCA+ (A5). (a) Balanced accuracy. (b) MCC. Each bar shows the change produced by adding one component: strict leakage governance (A1), full-panel multi-view input (A2), the re-designed tuned triad (A3), the knowledge-guided modules (A4) and the balanced-risk decision (A5).
+
+FigS05_fusion_by_decision_heatmap.jpg
+Fig. S5. Fusion rule × decision rule analysis on identical expert fits. Cells give balanced accuracy (mean of 10 folds) for five fusion rules combined with arg-max, balanced-risk (λ = 1) and tempered (λ tuned on inner folds) decisions; the proposed configuration is the equal-weight linear pool with the balanced-risk rule. BE, Boundary-Energy.
+
+FigS06_roc_and_precision_recall.jpg
+Fig. S6. Discrimination of TRIAD-BRCA+ on pooled out-of-fold predictions (repeat 1). (a) One-vs-rest receiver operating characteristic curves by subtype; dotted lines show the TRIAD-BRCA v1 equal-weight ensemble (V1). (b) Precision–recall curves by subtype. AUC, area under the receiver operating characteristic curve; AUPRC, area under the precision–recall curve.
+
+FigS07_per_subtype_f1.png
+Fig. S7. Per-subtype F1 scores with 95% bootstrap confidence intervals on pooled out-of-fold predictions for the TRIAD-BRCA v1 equal-weight ensemble (V1), TRIAD-BRCA+ at the arg-max operating point and TRIAD-BRCA+ with the balanced-risk rule.
+
+FigS08_reliability_diagrams.jpg
+Fig. S8. Reliability diagrams on pooled out-of-fold predictions: observed accuracy versus mean top-label confidence. (a) Ensembles: TRIAD-BRCA v1 (V1 and V8) and TRIAD-BRCA+. (b) The three TRIAD-BRCA+ experts. The dashed diagonal marks perfect calibration.
+
+FigS09_expert_error_correlation.jpg
+Fig. S9. Pairwise error correlation between experts on pooled out-of-fold predictions. (a) TRIAD-BRCA v1 experts. (b) TRIAD-BRCA+ experts. Lower values indicate more complementary errors.
+
+FigS10_robustness.jpg
+Fig. S10. Robustness to degraded molecular input applied at inference only. Balanced accuracy (mean ± SD over the 5 folds of repeat 1) when mutation calls are randomly lost (left), Gaussian noise is added to RNA values (centre) and RNA values are set missing and mean-imputed (right), for the v1 GBDT, the TRIAD-BRCA v1 equal-weight ensemble (V1) and TRIAD-BRCA+.
+
+FigS11_learning_curves.jpg
+Fig. S11. Learning curves. Balanced accuracy (mean, with shaded ± SD over the 5 folds of repeat 1) versus the number of training patients for the v1 GBDT, the TRIAD-BRCA v1 equal-weight ensemble (V1) and TRIAD-BRCA+.
+
